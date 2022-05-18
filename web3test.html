@@ -1,0 +1,27 @@
+<html>
+	<head> ANus
+		<Title>Shalom Malekuh Web3</title>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+	
+</head>
+
+<body>
+	<button onclick="login()">Connect Web3</button>
+	<script>
+		Moralis.initialize("4xo44gqrG6WsSMRS28wAQokKdghL5CObyfo9fx8I"); // 
+		Moralis.serverURL = "https://izt71jaowegk.usemoralis.com:2053/server"; //Server url from moralis.io
+	async function login(){
+	console.log("login has been clickt");
+	var user = await Moralis.Web3.authenticate();
+	if(user){
+		console.log(user)
+
+
+	}
+}
+
+
+	</script>
+
+</body>
